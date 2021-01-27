@@ -25,19 +25,19 @@ function setup(){
     box4 = new Boxa(445,320,30,50);
     box5 = new Boxa(505,320,30,50);
     box6 = new Boxa(525,320,30,50);
-    box7 = new Boxb(490,270,30,50);
-    box8 = new Boxb(470,270,30,50);
-    box9 = new Boxb(510,270,30,50);
-    box10 = new Boxb(530,270,30,50);
+    box7 = new Boxa(490,270,30,50);
+    box8 = new Boxa(470,270,30,50);
+    box9 = new Boxa(510,270,30,50);
+    box10 = new Boxa(530,270,30,50);
     box11 = new Boxa(500,230,30,50);
     box12 = new Boxa(850,160,30,50);
     box13 = new Boxa(870,160,30,50);
     box14 = new Boxa(890,160,30,50);
     box15 = new Boxa(830,160,30,50);
     box16 = new Boxa(810,160,30,50);
-    box17 = new Boxb(840,120,30,50);
-    box18 = new Boxb(860,120,30,50);
-    box19 = new Boxb(880,120,30,50);
+    box17 = new Boxa(840,120,30,50);
+    box18 = new Boxa(860,120,30,50);
+    box19 = new Boxa(880,120,30,50);
     box20 = new Boxa(850,90,30,50);
     hexagon = new Polygon(150,200,50,50);
     chain = new slingshot(hexagon.body,{x:150,y:200});
@@ -49,6 +49,9 @@ function draw(){
     Engine.update(engine);
     strokeWeight(4);
     base1.display();
+    hexagon.display();
+    chain.display();
+    fill("lightblue")
     box1.display();
     base2.display();
     box2.display();
@@ -56,22 +59,25 @@ function draw(){
     box4.display();
     box5.display();
     box6.display();
+    fill("pink")
     box7.display();
     box8.display();
     box9.display();
     box10.display();
+    fill("lightblue")
     box11.display();
     box12.display();
     box13.display();
     box14.display();
     box15.display();
     box16.display();
+    fill("pink")
     box17.display();
     box18.display();
     box19.display();
     box20.display();
-    hexagon.display();
-    chain.display();
+
+    
 }
 
 function mouseDragged(){
